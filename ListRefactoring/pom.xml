@@ -21,7 +21,7 @@
 		       <manifest>
 		          <addClasspath>true</addClasspath>
 		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>ListRefactoring.original.ListMain</mainClass>
+		          <mainClass>ListRefactoring.target.classes.original.List</mainClass>
 		       </manifest>
 		     </archive>
 		  </configuration>
