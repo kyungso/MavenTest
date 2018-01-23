@@ -21,7 +21,7 @@
 		       <manifest>
 		          <addClasspath>true</addClasspath>
 		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>ListRefactoring.target.classes.original.List</mainClass>
+		          <mainClass>original.List</mainClass>
 		       </manifest>
 		     </archive>
 		  </configuration>
@@ -31,8 +31,8 @@
 		    <artifactId>maven-dependency-plugin</artifactId>
 		    <executions>
 		        <execution>
-		            <id>copy</id>
-		            <phase>install</phase>
+		            <id>copy-dependencies</id>
+		            <phase>package</phase>
 		            <goals>
 		                <goal>copy-dependencies</goal>
 		            </goals>
