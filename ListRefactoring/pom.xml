@@ -21,7 +21,7 @@
 		       <manifest>
 		          <addClasspath>true</addClasspath>
 		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>org.planb.dms.core.DmsMain</mainClass>
+		          <mainClass>ListRefactoring.original.ListMain</mainClass>
 		       </manifest>
 		     </archive>
 		  </configuration>

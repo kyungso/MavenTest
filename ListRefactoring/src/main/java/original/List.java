@@ -1,33 +1,34 @@
 package original;
 
+import java.util.Scanner;
+
 public class List {
-	private Object[] elements = new Object[10];
-	private boolean readOnly;
-	private int size = 0;
+	public int sum(int num1, int num2){
+		return num1 + num2;
+	}
 
-	public void add(Object element) {
-		if (!readOnly) {
-			int newSize = size + 1;
+	public int minus(int num1, int num2){
+		return num1-num2;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Please input num1:");
+		Scanner num =new Scanner (System.in);
+		int num1=num.nextInt();
 			
-			if ( newSize > elements.length) {
-				Object[] newElements = new Object[elements.length + 10];
-				for (int i = 0; i < size; i++) {
-					newElements[i] = elements[i];
-				}
+	 
+		System.out.println("Please input num2:");
+		num=new Scanner (System.in);
+		int num2=num.nextInt();
+		 
+		
+		List cal = new List();
+		
+		System.out.println("Calculator result is :"+ cal.sum(num1, num2));
+		num.close();
 
-				elements = newElements;
-			}
-
-			elements[size] = element;
-			size++;
-		}
+		System.out.println("End.");
+		return;		
 	}
 
-	public int size() {
-		return size;
-	}
-
-	public Object get(int index) {
-		return elements[index];
-	}
 }
