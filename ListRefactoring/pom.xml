@@ -21,7 +21,7 @@
 		       <manifest>
 		          <addClasspath>true</addClasspath>
 		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>original.List</mainClass>
+		          <mainClass>List</mainClass>
 		       </manifest>
 		     </archive>
 		  </configuration>
