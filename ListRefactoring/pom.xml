@@ -21,7 +21,7 @@
 		       <manifest>
 		          <addClasspath>true</addClasspath>
 		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>List</mainClass>
+		          <mainClass>${project.build.outputDirectory}/List</mainClass>
 		       </manifest>
 		     </archive>
 		  </configuration>
