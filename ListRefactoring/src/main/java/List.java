@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Stack;
 
 public class List {
 	public int sum(int num1, int num2){
@@ -17,7 +16,7 @@ public class List {
 			
 	 
 		System.out.println("Please input num2:");
-		num=new Scanner (System.in);
+		num = new Scanner (System.in);
 		int num2=num.nextInt();
 		 
 		
