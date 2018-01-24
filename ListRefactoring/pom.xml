@@ -6,46 +6,13 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.5.1</version>
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
         </configuration>
       </plugin>
-      <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		  <artifactId>maven-jar-plugin</artifactId>
-		   <configuration>
-		     <outputDirectory>${basedir}</outputDirectory>
-		     <archive>
-		       <manifest>
-		          <addClasspath>true</addClasspath>
-		          <classpathPrefix>lib/</classpathPrefix>
-		          <mainClass>List</mainClass>
-		       </manifest>
-		     </archive>
-		  </configuration>
-		</plugin>
-		<plugin>
-		    <groupId>org.apache.maven.plugins</groupId>
-		    <artifactId>maven-dependency-plugin</artifactId>
-		    <executions>
-		        <execution>
-		            <id>copy-dependencies</id>
-		            <phase>package</phase>
-		            <goals>
-		                <goal>copy-dependencies</goal>
-		            </goals>
-		            <configuration>
-		                <outputDirectory>
-		                    ${project.build.directory}/lib
-		                </outputDirectory>
-		            </configuration>
-		        </execution>
-		    </executions>
-		</plugin>
     </plugins>
   </build>
   <dependencies>
@@ -65,11 +32,6 @@
   			</exclusion>
   		</exclusions>
   	</dependency>
-  	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
- 	<dependency>
- 	    <groupId>org.apache.maven.plugins</groupId>
- 	    <artifactId>maven-compiler-plugin</artifactId>
- 	    <version>3.7.0</version>
- 	</dependency>
+
   </dependencies>
 </project>
