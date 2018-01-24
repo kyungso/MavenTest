@@ -12,7 +12,6 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
-          <executable>C:\Program Files (x86)\Java\jdk1.7.0_80\bin\javac</executable>
         </configuration>
       </plugin>
       <plugin>
@@ -66,13 +65,11 @@
   			</exclusion>
   		</exclusions>
   	</dependency>
-  	
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-	<dependency>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-compiler-plugin</artifactId>
-	    <version>3.7.0</version>
-	</dependency>
-
+  	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+ 	<dependency>
+ 	    <groupId>org.apache.maven.plugins</groupId>
+ 	    <artifactId>maven-compiler-plugin</artifactId>
+ 	    <version>3.7.0</version>
+ 	</dependency>
   </dependencies>
 </project>
